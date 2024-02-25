@@ -1,0 +1,139 @@
+/*#include <stdio.h>
+void main(){
+
+printf("hello");
+}/*
+
+------------------- Chapter 1. Introduction ----------------
+// c is programing language.
+// Its developed by Dennis Retchis in 1972 at AT & T bell's lab
+// Features - 1)Reliable
+            2) easy to learn
+            3) simplicity ( write a code)
+            4) general purpose [ All os support]
+            5) portability
+            6)middle level language
+            7) easy to extende
+            8) speed and execution fast.
+            9) use maths
+
+
+// Rules-
+---> stdio.h ==> stander input output header file
+     clrscr  ==> clear screen
+     getch  ==> hold the output
+     printf() - print the statement to write code
+     scanf() - get the input from user
+     main() ==> function // its only one
+
+     \n ===> next line
+     ; ====> separate statement
+     all statement should be write --> small later
+     two backward slash[//] ==> single line comment
+     Multi line comment ==>  /* ...... */
+     /*
+---> alphabets/digits / spacial symbol -> constant/variable/keyword
+        -> instructions [block of code] -> program
+
+// Constant, Variables and Keywords
+    variables --> value stored in each location may change.
+    constant --> can't be change / fixed value
+    keyword --> its meaning is already explained to compiler
+                .keyword also called reserve word. ex. auto,sizeof, void, int, if, else
+                . keyword cant be used variable name
+    ex. int a = 5 // a => variable name . 5 => integer constant / constant . int => keyword / data type.
+
+#Types of constant
+    1. primary --> integer, real, character
+    2. secondary --> array, pointer, enum, union, structure etc..
+
+---> Integer constant
+    . at least one digit must
+    . not have decimal point
+    . no sign want positive [ by default] plus +
+    . no comma or blanks
+    . range  -2147483648 to 2147483647
+        ex. 426  +782 -800
+    . denoting %d
+*/
+/*
+#include <stdio.h>
+void main(){
+int a =5;
+printf("%d",a); //5
+}
+ */
+ /*
+    . e => exponent
+        ex. 3.2e5 // 320000
+----> float constant
+        . float / real
+        . decimal
+        . denoting %f
+  */
+
+/*
+#include <stdio.h>
+void main(){
+int f =5;
+printf("%f\n",f); //5.000000
+printf("%.2f\n",f);// 5.00
+float exp = 1e4;
+printf("%f\n",exp); // 10000.000000
+}
+*/
+
+  /*
+---> Character constant
+. deceleration char a = 'a';
+. denoting character => %c
+
+. ASCII VALUE 'A' => 65  'a' => 97 0 => 48
+
+// Arithmetic operation using ascii
+ size of char  ==> 1byte 8 bits ==>
+    range --> -2^8-1 to (2^8-1)-1 // -128 To +127
+
+------> Rules of constructing variable name
+    . first should be [a-z, A-Z , _ (underscore allow), $ (doller sign 1 allow), 0-9(digits)
+    . # not allowed anywhere
+    . ;;;; means each statement , there is 4 statement
+*/
+/*
+//simple interest program
+#include <stdio.h>
+void main(){
+  int  p, noy;
+    float  rate, si;
+printf("Enter prinicple amount\tnum of year \t rate:\n");
+scanf("%d %d %f",&p,&noy,&rate);
+si= p*noy*rate/100;
+printf("\nSimple intrest %.1f:",si);
+}
+
+*/
+
+/*
+#include <stdio.h>
+void main(){
+    //Addition of ascii value
+int ch = 'A' + 'B';
+printf("'A'+'B'= %d\n",ch); // 65+66 =131
+char $i = 'a';
+
+// variable name define
+printf("%c",$i);//a
+int $23424_34$545Hi=10;
+printf("\n%d",$23424_34$545Hi);// error stray #
+
+
+//sizeof()
+
+printf(" sizeof integer: %d byte\n",sizeof(int));
+printf("sizeof float/real: %d byte \n",sizeof(float));
+printf("sizeof character: %d byte\n",sizeof(char));
+
+}
+*/
+/* #maths function in c
+function --> pow(), abs(), sqrt(), sin(), cos(), tan() etxc..
